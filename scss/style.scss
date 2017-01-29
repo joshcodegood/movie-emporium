@@ -1,0 +1,44 @@
+/* Include Foundation! */
+
+@import '../node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+    h1 {
+        text-align: center;
+        color: #2a2b2d;
+    }
+
+    @include grid-row();
+    background-color: lightseagreen;
+
+    ul {
+        //border: 1px solid black;
+        @include grid-column(4);
+        list-style: none;
+        text-align: center;
+
+        li {
+            border: 2px solid white;
+            border-radius: 6px;
+            margin: 5px;
+            background-color: lighten(lightseagreen, 5);
+            font-size: 1.5em;
+            color: #2a2b2d;
+
+            img {
+                border: 1px solid white;
+            }
+        }
+    }
+}
+
+
+
+button {
+    @include button
+}
