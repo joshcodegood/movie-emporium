@@ -6,6 +6,8 @@
 @include foundation-grid;
 
 body {
+    @include grid-row();
+    background-color: lightseagreen;
     font-family: 'Raleway', sans-serif;
 
     h1 {
@@ -13,26 +15,40 @@ body {
         color: #2a2b2d;
     }
 
-    @include grid-row();
-    background-color: lightseagreen;
+    
 
     ul {
         //border: 1px solid black;
-        @include grid-column(4);
+        @include grid-column(6);
         list-style: none;
         text-align: center;
+        height: 285px;
 
         li {
             border: 2px solid white;
             border-radius: 6px;
-            margin: 5px;
+            //margin: 5px;
             background-color: lighten(lightseagreen, 5);
-            font-size: 1.5em;
+            font-size: 1.75em;
             color: #2a2b2d;
 
-            img {
-                border: 1px solid white;
+            p {
+                @include grid-column(8);
+                // height: 265px;
             }
+
+            img {
+                @include grid-column(4);
+                //border: 1px solid white;
+            }
+
+            // div {
+            //     @include grid-column(8);
+            //     i {
+            //         @include grid-column(12);
+            //     }
+            // }
+            
         }
     }
 }
