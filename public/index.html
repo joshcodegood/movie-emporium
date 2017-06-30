@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Movie Emporium!</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- add css file -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/235648dfe5.js"></script>
+    <!-- add js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+
+<body ng-app="MovieApp">
+    <h1>Movies! Movies! Movies!</h1>
+    <!--<section ng-controller="InputController">
+        <input type="text" ng-model="name" placeholder="Movie title">
+        <input type="text" ng-model="date" placeholder="Release date">
+        <button ng-click="newMovie()">Add Movie</button>
+    </section>-->
+    <section ng-controller="ShowMoviesController">
+        <ul ng-repeat="aMovie in movies">
+            <li>
+                <img src="{{ aMovie.poster_path }}">
+                <div>
+                <p>{{ aMovie.title }}</p>
+                <p>{{ aMovie.release_date }}</p>
+                
+                <div>
+                    <i ng-click="changeStars(aMovie, 1)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
+                    <i ng-show="aMovie.rating >= 1" class="fa fa-star" aria-hidden="true"></i>
+                    <i ng-click="changeStars(aMovie, 2)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
+                    <i ng-show="aMovie.rating >= 2" class="fa fa-star" aria-hidden="true"></i>
+                    <i ng-click="changeStars(aMovie, 3)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
+                    <i ng-show="aMovie.rating >= 3" class="fa fa-star" aria-hidden="true"></i>
+                    <i ng-click="changeStars(aMovie, 4)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
+                    <i ng-show="aMovie.rating >= 4" class="fa fa-star" aria-hidden="true"></i>
+                    <i ng-click="changeStars(aMovie, 5)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
+                    <i ng-show="aMovie.rating >= 5" class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                </div>
+            </li>
+    </section>
+</body>
+
+</html>

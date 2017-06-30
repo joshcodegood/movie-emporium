@@ -1,0 +1,25 @@
+/* Include Foundation! */
+body {
+  background-color: #00ABE7;
+  font-family: 'Raleway', sans-serif; }
+  body h1 {
+    text-align: center;
+    color: #FF5964;
+    font-size: 4em;
+    text-shadow: 5px 0 0 white, 0 -5px 0 white, 0 5px 0 white, -5px 0 0 white, -5px -5px 0 white, 5px 5px 0 white; }
+  body section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: .75fr; }
+    body section ul {
+      list-style: none;
+      text-align: center; }
+      body section ul li {
+        border: 10px solid #FF5964;
+        background-color: white;
+        border-radius: 35px;
+        margin: 25px;
+        font-size: 1.75em;
+        color: #2a2b2d; }
+        body section ul li p {
+          min-height: 67px; }
