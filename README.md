@@ -1,4 +1,4 @@
-#A Movie Site!
+# A Movie Site!
 <h2>Movie site project using:</h2>
 <ul>
 <li>AngularJS</li>
