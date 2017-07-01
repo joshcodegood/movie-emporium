@@ -1,2 +1,8 @@
 # movie-emporium
-Expanded movie list project using Angular JS with AJAX requests and an API.
+<ul>Movie site project using: 
+<li>AngularJS</li>
+<li>AJAX</li>
+<li><a href="https://www.themoviedb.org/" target="#">the Movie Database API</a></li>
+<li>CSS Grid</li>
+<li>Love</li>
+</ul>
