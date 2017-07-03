@@ -1,12 +1,7 @@
-/* Include Foundation! */
 
 //Consider removing Foundation and applying CSS Grid. Could be a fun
 //exercise
 
-// @import '../node_modules/foundation-sites/scss/foundation';
-
-// @include foundation-global-styles;
-// @include foundation-grid;
 $font: 'Raleway', sans-serif;
 $bg: #00ABE7;
 $blerk: #2a2b2d;
@@ -17,13 +12,11 @@ $red: #FF5964;
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    //grid-template-rows: 1fr 1fr 1fr;
     background-color: $bg;
     font-family: $font;
 
     h1 {
        grid-column-end: span 3;
-       //grid-row-end: span 1;
         text-align: center;
         color: $red;
         font-size: 4em;
@@ -34,29 +27,18 @@ body {
     section {
         grid-column-end: span 3;
         display: grid;
-        //grid-column-end: span 1;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: .75fr;
-        //grid-template-rows: 
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr;
-        // grid-auto-rows: .75fr;
 
         ul {
-            //grid-column-end: span 1;
-            //border: 1px solid black;
-            //min-height: 470px;
             list-style: none;
             text-align: center;
-            // height: 285px;
 
             li {
-                //height: 470px;
                 border: 10px solid $red;
                 background-color: white;
                 border-radius: 35px;
                 margin: 25px;
-                //background-color: lighten(lightseagreen, 5);
                 font-size: 1.75em;
                 color: #2a2b2d;
 
