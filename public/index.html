@@ -26,21 +26,21 @@
             <li>
                 <img src="{{ aMovie.poster_path }}">
                 <div>
-                <p>{{ aMovie.title }}</p>
-                <p>{{ aMovie.release_date }}</p>
-                
-                <div>
-                    <i ng-click="changeStars(aMovie, 1)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
-                    <i ng-show="aMovie.rating >= 1" class="fa fa-star" aria-hidden="true"></i>
-                    <i ng-click="changeStars(aMovie, 2)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
-                    <i ng-show="aMovie.rating >= 2" class="fa fa-star" aria-hidden="true"></i>
-                    <i ng-click="changeStars(aMovie, 3)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
-                    <i ng-show="aMovie.rating >= 3" class="fa fa-star" aria-hidden="true"></i>
-                    <i ng-click="changeStars(aMovie, 4)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
-                    <i ng-show="aMovie.rating >= 4" class="fa fa-star" aria-hidden="true"></i>
-                    <i ng-click="changeStars(aMovie, 5)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
-                    <i ng-show="aMovie.rating >= 5" class="fa fa-star" aria-hidden="true"></i>
-                </div>
+                    <p>{{ aMovie.title }}</p>
+                    <p>{{ aMovie.release_date }}</p>
+
+                    <div>
+                        <i ng-click="changeStars(aMovie, 1)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
+                        <i ng-show="aMovie.rating >= 1" class="fa fa-star" aria-hidden="true"></i>
+                        <i ng-click="changeStars(aMovie, 2)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
+                        <i ng-show="aMovie.rating >= 2" class="fa fa-star" aria-hidden="true"></i>
+                        <i ng-click="changeStars(aMovie, 3)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
+                        <i ng-show="aMovie.rating >= 3" class="fa fa-star" aria-hidden="true"></i>
+                        <i ng-click="changeStars(aMovie, 4)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
+                        <i ng-show="aMovie.rating >= 4" class="fa fa-star" aria-hidden="true"></i>
+                        <i ng-click="changeStars(aMovie, 5)" ng-hide="aMovie.rated" class="fa fa-star-o" aria-hidden="true"></i>
+                        <i ng-show="aMovie.rating >= 5" class="fa fa-star" aria-hidden="true"></i>
+                    </div>
                 </div>
             </li>
     </section>
