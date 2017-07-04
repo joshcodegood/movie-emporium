@@ -20,4 +20,10 @@
 <li><h2>Design</h2>
 <p>Design is not exactly my wheelhouse, but as with many things in life, I feel some guidelines can be useful when approaching a project. I'm paraphrasing of course, but I once read in an interview with Jack White that imposing limitations upon ourselves gives us freedom in that it gives us a box to work in. Without that box, we can feel lost in a desert of potential ideas, which can often result in a type of "analysis paralysis" or "blank page syndrome", at least for me.</p>
 <p>So while I probably can't learn to be an amazing designer in a few hours, I can try to teach myself some basics so that I don't get hung up on design things while creating projects for myself. One style that I've noted is a "flat" design that was popular the last few years, which seems to be characterized by a lack of dimension, bold, "flat" colors, and an emphasis on typography. It's certainly not something I've mastered, but it's a direction to move in and it keeps me from getting too hung up on design details that aren't necessarily the "point" of the project. I hope to learn more over time. One of my "medium-range" goals is to have some full-stack facility as well as an awareness of design, so that I can be somewhat self-sufficient when it comes to web design. No man is an island, but I'd like to be able to play one convincingly in case I need to pretend for awhile.</p></li>
+<li><ul><h2>Planned updates: </h2>
+<li>Some sort of background feature to break it up</li>
+<li>A footer with some info</li>
+<li>Some transition effects to make the scrolling nicer</li>
+</ul>
+</li>
 </ul>
