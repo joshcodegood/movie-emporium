@@ -1,23 +1,20 @@
 body {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   background-color: #00ABE7;
   font-family: "Raleway", sans-serif; }
   body h1 {
-    grid-column-end: span 3;
     text-align: center;
     color: #FF5964;
     font-size: 4em;
     text-shadow: 5px 0 0 white, 0 -5px 0 white, 0 5px 0 white, -5px 0 0 white, -5px -5px 0 white, 5px 5px 0 white;
     margin-bottom: 0; }
   body section {
-    grid-column-end: span 3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: .75fr; }
     body section ul {
       list-style: none;
-      text-align: center; }
+      text-align: center;
+      grid-column-end: span 2; }
       body section ul li {
         border: 10px solid #FF5964;
         background-color: white;
@@ -29,3 +26,7 @@ body {
           min-height: 67px; }
         body section ul li div {
           padding-bottom: 1%; }
+    body section ul:nth-child(19) {
+      grid-column: 2 / 4; }
+    body section ul:nth-child(20) {
+      grid-column: 4 / 6; }
